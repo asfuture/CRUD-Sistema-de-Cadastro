@@ -1,0 +1,130 @@
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* codigo do body geral*/
+        body {
+            background-color: #4A73AE;
+        }
+        div {
+            width: 600px;
+            height:380px;
+            text-align: center;
+            position: relative;
+            left: 400px;
+            margin-top: 100px;
+        }
+        /* codigo tela index*/
+        .div-index{
+            border: none;
+        }
+        .btn-cadastra,.btn-consulta{
+            background-color: #F26522;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-top: 100px;
+            width: 100px;
+            height: 50px;
+        }
+        .a-cadastra{
+           
+            margin-right: 50px;
+        }
+        .a-consulta{
+            margin-left: 50px; 
+        }
+        /* codigo do formulário editar produto*/
+        .formulario-editar-produto{
+           border: 2px solid #F26522;
+            font-size: 20px;
+        }
+        .titulo-editar-produto{
+             margin-top: -50px;
+        }
+        .p-editar-produto{
+            font-size: 23px;
+        }
+        .btn-salva-editar{
+            background-color: #4DC147;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-top: -10px;
+            width: 100px;
+            height: 50px;
+        }
+        .btn-volta-editar{
+            background-color: #F26522;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+            width: 100px;
+            height: 50px;
+        }
+        /* codigo do formulário cadastro de produto*/
+        .formulario-cadastro-produto{
+            border: 2px solid #F26522;
+            font-size: 20px;
+        }
+        .titulo-cadastro-produto{
+            margin-top: -50px;
+            font-size: 30px;
+        }
+        .p-formulario{
+            font-size: 23px;
+        }
+        .btn-salva-cadastro{
+            background-color: #4DC147;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-top: -10px;
+            width: 100px;
+            height: 50px;
+        }
+        .btn-volta-cadastro{
+            background-color: #F26522;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+            width: 100px;
+            height: 50px;
+        }
+        /* codigo da tabela listar*/
+        table {
+            text-align: center;
+            font-size:20px;
+            position: relative;
+            margin-top: 40px;
+        }
+        .titulo-tabela{
+            color: white;
+        }
+        td{
+            padding: 10px;
+            border:1px solid black;
+        }
+        .btn-tabela{
+            margin: 20px;
+            color:#4DC147;
+        }
+        .btn-tabela-excluir{
+              margin: 20px;
+           color: #5b3d3d;
+        }
+        .btn-volta-lista{
+            background-color: #F26522;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+        /* codigo da tabela listar- titulo*/
+        .consulta {
+           
+            width: 800px;
+            height: 60px;
+            position: relative;
+            left: 300px;
+            margin-top: 20px;
+            
+        }
+        .titulo-lista-produto{
+            font-size: 30px;
+        }
