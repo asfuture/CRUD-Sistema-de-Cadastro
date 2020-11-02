@@ -1,5 +1,5 @@
 <?php
-	// Código capiturar os dados do BD e enviar para o formulário editar
+	// Capiturar os dados do BD e enviar para o formulário editar
 	include("conectar.php");
 	$ra = $_GET['id'];
 	$resultado_dados = " SELECT * FROM produto WHERE  id= $ra";
@@ -31,7 +31,7 @@
 				<label>Adicionar Link de fotos<input type="text" name="tLink" value="<?php echo $row_dados['link']; ?>"></label><br><br>
 				<label for="txtArea">Descrição do produto</label><br>
 				<textarea name="tArea" id="txtArea" cols="50" rows="5" value="<?php echo $row_dados['descricao']; ?>"></textarea><br><br>
-				<input class="btn-salva-editar" type="submit" value="Salva"> 
+				<input class="btn-salva-editar" type="submit" value="Alterar"> 
 			</form><br><br>
 			<a href="http://localhost/CRUD-sistema-cadastrar/lista.php"><button class="btn-volta-editar">Voltar</button></a>
 		</div>

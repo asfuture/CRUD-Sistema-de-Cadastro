@@ -7,13 +7,18 @@ include('conectar.php');
 	$Modelo = $_POST['tModelo'];
 	$Preco = $_POST['tPreco'];
 	$Link = $_POST['tLink'];
-	$Descricao = $_POST['TArea'];
+	$Descricao = $_POST['tArea'];
 
 		//Atualizando o BD
  		$resultado_dados = " UPDATE produto SET 
-             nome = '$Nome', marca ='$Marca', modelo = '$Modelo',preco='$Preco',link='$Link',descricao='$Descrica' where id= $id";
-   		 mysqli_query($conexao, $resultado_dados);
-
+            nome = '$Nome', marca ='$Marca', modelo = '$Modelo',preco='$Preco',link='$Link',descricao ='$Descricao' where id= $id";
+   		
+   		//Verifição de alteração do INSERT INTO do BD
+   		 if ($conexao -> query($resultado_dados) === TRUE) {
+			echo "Produto alterado com sucesso";
+		}else{
+			echo "Error".$resultado_dados."<br>".$conexao->error;
+		}
    		 //Retornando a pagina Lista
    		header('location:lista.php');
     	mysqli_close($conexao);

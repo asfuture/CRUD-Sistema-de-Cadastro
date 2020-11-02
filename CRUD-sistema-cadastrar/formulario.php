@@ -23,7 +23,7 @@
 				<label>Adicionar Link de fotos<input type="text" name="Link"></label><br><br>
 				<label for="txtArea">Descrição do produto</label><br>
 				<textarea name="Area" id="txtArea" cols="50" rows="5"></textarea><br><br>
-					<!--Botão Salvar-->
+				<!--Botão Salvar-->
 				<input class="btn-salva-cadastro" type="submit" value="Salva">
 			</form>
 				<!--Botão Voltar-->

@@ -1,7 +1,7 @@
 <?php
 	include('conectar.php');
 	//Buscar os dados do BD e listar 
-	$lista = mysqli_query($conexao, " SELECT * FROM produto");
+	$lista = mysqli_query($conexao," SELECT * FROM produto");
 ?>
 	<html>
 	<head>

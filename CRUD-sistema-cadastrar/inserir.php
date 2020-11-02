@@ -11,7 +11,13 @@ include('conectar.php');
 
 	//Enviando dados do formulário cadastra para o BD
 		$incluir = "INSERT INTO produto (nome,marca,modelo,preco,link,descricao) VALUES ('$Nome','$Marca','$Modelo','$Preco','$Link','$Descricao')";
-		mysqli_query($conexao, $incluir);
+
+		//Verificação do INSERT INTO no BD
+		if ($conexao -> query($incluir) === TRUE) {
+			echo "Produto cadastrado com sucesso";
+		}else{
+			echo "Error".$incluir."<br>".$conexao->error;
+		}
 	 //Retornando a pagina formulário(pagina cadastrar)
 		header('location:formulario.php');
 		mysqli_close($conexao);
