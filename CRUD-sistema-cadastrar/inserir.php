@@ -1,7 +1,7 @@
 <?php
 include('conectar.php');
 	
-	//Rebecendo dados do formulário cadastra
+	//Rebecendo dados do formulário cadastro
 	$Nome = $_POST['Nome'];
 	$Marca = $_POST['Marca'];
 	$Modelo = $_POST['Modelo'];
